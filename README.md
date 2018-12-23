@@ -19,37 +19,39 @@ Para testar o nosso Micro Service você deve chamar as urls abaixo.
 http://localhost:3000/api/pessoa
 
 request
-***javascript
+
+```javascript
 {
   "nome": "cicero 2",
   "ativo":1
 }
-***
+```
+
 
 response
-***javascript
+```javascript
 {
     "mensagem": "Registro inserido com sucesso!"
 }
-***
+```
 
 [GET] - consuta um registro pela sua chave
 http://localhost:3000/api/pessoa/codigo=24
 
 response
-***javascript
+```javascript
 {
     "codigo": 24,
     "nome": "cicero 2",
     "ativo": true
 }
-***
+```
 
 [GET] - consulta todas as pessoas
 http://localhost:3000/api/pessoa
 
 response
-***javascript
+```javascript
 [
     {
         "codigo": 24,
@@ -67,34 +69,35 @@ response
         "ativo": true
     }
 ]
-***
+```
 
 
 [PUT] - Alterando um registro
 http://localhost:3000/api/pessoa
 
 request
-***javascript
+```javascript
 {
   "codigo": 23, 
   "nome": "cicero codigo 23",
   "ativo":1
 }
-***
+```
 
 response
-***javascript
+```javascript
 {
     "mensagem": "Registro atualizado com sucesso!"
 }
-***
+```
+
 
 [DELETE] - excluir um registro
 http://localhost:3000/api/pessoa/codigo=23
 
 response
-***javascript
+```javascript
 {
     "mensagem": "Registro excluido com sucesso!"
 }
-***
+```
